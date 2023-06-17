@@ -20,6 +20,7 @@ This is a custom waybar timer module.
 
 ### Depends on
 
+- bash
 - zenity
 - dateutils
 - coreutils
@@ -34,6 +35,7 @@ This is a custom waybar timer module.
 ```jsonc
 "custom/timer": {
     "tooltip": true,
+    "return-type": "json",
     "exec": "$HOME/.config/waybar/modules/waybar-timer check",
     "on-click": "$HOME/.config/waybar/modules/waybar-timer simple_dialog",
     "on-click-right": "$HOME/.config/waybar/modules/waybar-timer complex_dialog",
