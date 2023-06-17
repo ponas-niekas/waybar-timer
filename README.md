@@ -2,7 +2,6 @@
 
 This is a custom waybar timer module.
 
-
 ### Screenshots
 
 ##### Innactive timer
@@ -23,9 +22,8 @@ This is a custom waybar timer module.
 - bash
 - zenity
 - dateutils
-- coreutils
 
-#### Configuration example:
+### Configuration example:
 ```css
 #custom-timer.active {
   background-color: #red;
