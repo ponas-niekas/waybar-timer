@@ -46,7 +46,7 @@ if [ "$cmd" == "check" ]; then
         echo '{"text": "'"<span font='13' rise='-2000'>󰔛</span> "'"}'
     fi
 
-elif [ "$cmd" == "simple_dialog" ]; then
+elif [ "$cmd" == "minute_dialog" ]; then
 
     TIMER_TARGET=$(zenity --scale --title "Set timer" --text "In x minutes:" --min-value=1 --max-value=600 --step=1 --value=10)
     if [ "$?" = 0 ] ; then
@@ -54,7 +54,7 @@ elif [ "$cmd" == "simple_dialog" ]; then
         echo "$DATE_TIME_TARGET_STR|Timer" > "$TFILE"
     fi
 
-elif [ "$cmd" == "complex_dialog" ]; then
+elif [ "$cmd" == "datetime_dialog" ]; then
 
     TIMER_TARGET=$(zenity --forms --text="" --title="Set timer" --add-entry="Title:" --add-entry="Hours:" --add-entry="Minutes:" --add-calendar="Date" --forms-date-format="%Y-%m-%d")
 
